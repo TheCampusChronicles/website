@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(201, 201, 201);
+    background: #eeeeee;
     color: rgba(0, 0, 0, 0.87);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ body {
 #brand-header {
     display: grid;
     grid-template-columns: 10% 90%;
-    background-color: rgb(201, 201, 201);
+    background-color: #eeeeee;
     padding-left: 6%;
     width: 100%;
 }
@@ -76,7 +76,7 @@ body {
 
 #navigation .nav a:hover {
     color: #2191FB;
-    background-color: rgb(201, 201, 201);
+    background-color: #eeeeee;
 }
 
 .container {
