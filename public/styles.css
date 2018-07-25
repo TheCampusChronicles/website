@@ -142,6 +142,8 @@ body {
     }
 }
 
+
+
 @media (max-width: 480px) {
     .container {
         grid-template-columns: 100%;
@@ -195,7 +197,8 @@ body {
 }
 
 .w3-bar .w3-button {
-    padding: 30px;
+    padding: 20px;
+    margin-right: 10px;
     color: #dddddd
 }
 
@@ -253,3 +256,6 @@ body {
     padding: 2px 16px;
     
 }
+
+
+
