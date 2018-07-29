@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     */
 });
 
+var navState = false;
 
 $(document).ready(function () {
 
@@ -27,9 +28,6 @@ $(document).ready(function () {
     // Figure out and save aspect ratio for each video
     $allVideos.each(function () {
         const aspectRatio = $(this).height() / $(this).width();
-        console.log($(this).height());
-        console.log($(this).width());
-        console.log(aspectRatio);
         $(this).data('aspectRatio', aspectRatio)
         // and remove the hard coded width/height
             .removeAttr('height')
@@ -49,6 +47,22 @@ $(document).ready(function () {
 
         // Kick off one resize to fix all videos on page load
     }).resize();
+    let navHeaderHeight = document.getElementById("nav-header").offsetHeight;
+    document.getElementById("side-nav-menu").style.top = navHeaderHeight.toString() + "px";
+    console.log(navHeaderHeight);
+    console.log(document.getElementById("side-nav-menu").offsetTop);
 
 });
+
+function openNav() {
+    if (navState) {
+        document.getElementById("side-nav-menu").style.width = "0px";
+        document.getElementById("nav-state").innerHTML = "&#9776;";
+    }
+    else {
+        document.getElementById("side-nav-menu").style.width = "250px";
+        document.getElementById("nav-state").innerHTML = "&#215;";
+    }
+    navState = !navState;
+}
 

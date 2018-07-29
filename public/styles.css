@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #eeeeee;
+    background: rgb(201, 201, 201);
     color: rgba(0, 0, 0, 0.87);
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -17,7 +17,7 @@ body {
 #brand-header {
     display: grid;
     grid-template-columns: 10% 90%;
-    background-color: #eeeeee;
+    background-color: rgb(201, 201, 201);
     padding-left: 6%;
     width: 100%;
 }
@@ -62,35 +62,57 @@ body {
     text-decoration: none;
 }
 
-#navigation  .facebook a {
-    float: right;
-}
-
-#navigation  .instagram a {
-    float: right;
-}
-
-#navigation  .linkedin a {
-    float: right;
-}
-
 #navigation .nav a:hover {
     color: #2191FB;
-    background-color: #eeeeee;
+    background-color: rgb(201, 201, 201);
+}
+
+.top-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 2% 0;
+    width: 90%;
+    border: 1px solid #888888;
+    border-radius: 5px;
+
+}
+
+.top-slider-container i {
+    align-self: center;
+    font-size: 7vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.top-slider-container .dot-container {
+    margin-top: 5%;
+}
+
+.top-slider-container .dot-container .dots {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10%;
+}
+
+.top-slider-container .dot-container .dots div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dddddd;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-column-gap: 2.5%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
     grid-row-gap: 6em;
     margin: 5% 7%;
 }
 
 .container .column {
     display: flex;
-    height: 80%;
-    min-height: 400px;
     background-color: rgb(233, 233, 233);
     box-shadow: 0 0 5px 0 #808080;
     box-sizing: border-box;
@@ -109,37 +131,13 @@ body {
 
 .container .column img {
     width: 100%;
-    max-height: 40%;
 }
 
 .container .column p {
     text-align: justify;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     font-size: 1rem;
     padding: 0 5% 5% 5%;
-}
-
-@media (max-width: 1400px) {
-    .container {
-        grid-template-columns: 30% 30% 30%;
-        grid-column-gap: 5%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        grid-template-columns: 45% 45%;
-        grid-column-gap: 10%;
-    }
-}
-
-@media (max-width: 650px) {
-    .container {
-        grid-template-columns: 100%;
-    }
-    .container .column {
-        min-height: 500px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -147,9 +145,5 @@ body {
         grid-template-columns: 100%;
         grid-row-gap: 4em;
         margin: 5% 4%;
-    }
-
-    .container .column {
-        min-height: 400px;
     }
 }
