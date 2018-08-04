@@ -5,8 +5,8 @@
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
-    margin-top: 80px;
+    padding: 2em;
+    margin-top: 5em;
 }
 
 .footer-distributed .footer-left,
@@ -76,19 +76,14 @@
 .footer-distributed .footer-center i {
     background-color: #33383b;
     color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
+    font-size: 1em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
+    line-height: 3em;
+    margin: 0.5em;
     vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
-    line-height: 38px;
 }
 
 .footer-distributed .footer-center p {

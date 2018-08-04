@@ -11,10 +11,6 @@
             background-color: #eeeeee;
         }
 
-        #brand-header {
-            background-color: #eeeeee;
-        }
-
         .content {
             display: block;
             width: 70%;
@@ -30,11 +26,44 @@
     </style>
 </head>
 <body>
-<div id="brand-header">
-    <img id="brand-header-logo" src="./images/tcc_icon.png">
-    <p id="brand-header-title">The Campus Chronicles</p>
+
+<div id="side-nav-menu">
+    <!--<a class="close-btn" href="javascript:void(0)" onclick="closeNav()">&times;</a>-->
+    <div class="menu">
+        <a class="menu-item" href="/">Home</a>
+        <a class="menu-item" href="#">Our Work</a>
+        <a class="menu-item" href="#">Services</a>
+        <a class="menu-item" href="#">About</a>
+        <a class="menu-item" href="#">Contact</a>
+    </div>
+    <div id="menu-social-media-icons">
+        <a class="menu-social-media-icon" href="https://www.facebook.com/thecampuschronicles1" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a class="menu-social-media-icon" href="https://www.instagram.com/thecampuschronicles" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a class="menu-social-media-icon" href="https://www.linkedin.com/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="menu-social-media-icon" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter-square"></i></a>
+    </div>
 </div>
-<div style="height: 1em; width: 100%; background-color: #2191FB"></div>
+<nav id="nav-header">
+    <div id="nav-state" style="cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <img id="nav-header-logo" src="images/tcc_icon.png"/>
+    <a id="nav-header-name">The Campus Chronicles</a>
+    <div id="header-social-media-icons">
+        <a class="header-social-media-icon" href="https://www.facebook.com/thecampuschronicles1"
+           target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a class="header-social-media-icon" href="https://www.instagram.com" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a class="header-social-media-icon" href="https://www.linkedin.com/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="header-social-media-icon" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter-square"></i></a>
+    </div>
+</nav>
+
 <div class="content">
     <h1>
         Privacy Policy

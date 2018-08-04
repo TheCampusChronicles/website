@@ -70,63 +70,51 @@
 
 <div id="side-nav-menu">
     <!--<a class="close-btn" href="javascript:void(0)" onclick="closeNav()">&times;</a>-->
-    <a class="menu-item" href="/">Home</a>
-    <a class="menu-item" href="#">Our Work</a>
-    <a class="menu-item" href="#">Services</a>
-    <a class="menu-item" href="#">About</a>
-    <a class="menu-item" href="#">Contact</a>
-    <div class="menu-item social-media-icons">
-        <a class="social-media-icon" href="https://www.facebook.com/thecampuschronicles1" target="_blank"><i
-                class="fab fa-facebook-square"></i></a>
-        <a class="social-media-icon" href="https://www.instagram.com" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-        <a class="social-media-icon" href="https://www.linkedin.com/" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
-        <a class="social-media-icon" href="https://twitter.com/" target="_blank"><i
-                class="fab fa-twitter-square"></i></a>
-
+    <div class="menu">
+        <a class="menu-item" href="/">Home</a>
+        <a class="menu-item" href="#">Our Work</a>
+        <a class="menu-item" href="#">Services</a>
+        <a class="menu-item" href="#">About</a>
+        <a class="menu-item" href="#">Contact</a>
     </div>
+    <div id="menu-social-media-icons">
+        <a class="menu-social-media-icon" href="https://www.facebook.com/thecampuschronicles1" target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a class="menu-social-media-icon" href="https://www.instagram.com/thecampuschronicles" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a class="menu-social-media-icon" href="https://www.linkedin.com/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="menu-social-media-icon" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter-square"></i></a>
+    </div>
+    <img src="images/tcc_icon_without_background.png" style="width: 100%; opacity: 0.02;"/>
 </div>
 
 <nav id="nav-header">
-    <ul>
-        <li><a id="nav-state" style="cursor: pointer;" onclick="openNav()">&#9776;</a></li>
-        <li><a class="name">The Campus Chronicles</a></li>
-        <li class="social-media-icon"><a href="https://www.facebook.com/thecampuschronicles1" target="_blank"><i
-                class="fab fa-facebook-square"></i></a></li>
-        <li class="social-media-icon"><a href="https://www.instagram.com" target="_blank"><i
-                class="fab fa-instagram"></i></a></li>
-        <li class="social-media-icon"><a href="https://www.linkedin.com/" target="_blank"><i
-                class="fab fa-linkedin"></i></a></li>
-        <li class="social-media-icon"><a href="https://twitter.com/" target="_blank"><i
-                class="fab fa-twitter-square"></i></a></li>
-    </ul>
-
+    <div id="nav-state" style="cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <img id="nav-header-logo" src="images/tcc_icon.png"/>
+    <a id="nav-header-name">The Campus Chronicles</a>
+    <div id="header-social-media-icons">
+        <a class="header-social-media-icon" href="https://www.facebook.com/thecampuschronicles1"
+           target="_blank"><i
+                class="fab fa-facebook-square"></i></a>
+        <a class="header-social-media-icon" href="https://www.instagram.com" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a class="header-social-media-icon" href="https://www.linkedin.com/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="header-social-media-icon" href="https://twitter.com/" target="_blank"><i
+                class="fab fa-twitter-square"></i></a>
+    </div>
 </nav>
-<br><br>
-<!--<div id="navigation">
-    <ul>
-        <li class="nav"><a href="#home">Home</a></li>
-        <li class="nav"><a href="#about">About</a></li>
-        <li class="nav"><a href="#our-work">Our Work</a></li>
-        <li class="nav"><a href="#services">Services</a></li>
-        <li class="nav"><a href="#contact">Contact</a></li>
-        <li class="nav linkedin"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li class="nav instagram"><a href="https://www.instagram.com" target="_blank"><i
-                class="fab fa-instagram"></i></a></li>
-        <li class="nav facebook"><a href="https://www.facebook.com/thecampuschronicles1" target="_blank"><i
-                class="fab fa-facebook-square"></i></a></li>
 
-    </ul>
-</div>-->
+<!--
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <!-- <ol class="carousel-indicators">
+    &lt;!&ndash; <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol> -->
+    </ol> &ndash;&gt;
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="d-block w-100" src="./images/tcc_cover.png" alt="First slide">
@@ -147,86 +135,95 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+-->
 
 <!-- ######## -->
 
-<div class="container">
-    <div class="column">
-        <div class="youtube-video-container">
+<div id="articles-container">
+    <div class="article">
+        <div class="youtube-video-container-16x9">
             <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F865966610258038%2F&show_text=0&width=560"
-                    width="560"
-                    height="315"
-                    style="border:none;overflow:hidden"
                     scrolling="no"
                     frameborder="0"
-                    allowTransparency="true"
-                    allowFullScreen="true"></iframe>
+                    allowTransparency="true">
+            </iframe>
         </div>
-        <p>
-            College life varies from person to person,
-            So here we are, asking up some students their honest opinions about our college!!
-            Hope you like the honesty they have shown, and don’t forget to like and share this video!
-            Stay tuned for more such videos, and beware; you might be the next one being interviewed by us!
-        </p>
+        <div class="content">
+            <p>
+                College life varies from person to person,
+                So here we are, asking up some students their honest opinions about our college!!
+                Hope you like the honesty they have shown, and don’t forget to like and share this video!
+                Stay tuned for more such videos, and beware; you might be the next one being interviewed by us!
+            </p>
+        </div>
     </div>
-    <div class="column">
-        <img src="images/posts/26june2018.jpg">
-        <p>
-            "Books" are surely personal things. We often
-            form unique bonds with the characters we read
-            about and relate to storylines in different ways
-            according to our perceptions. If you are a book
-            lover, and if you’re reading this post we’re presuming
-            that you are, the books on this list should have already
-            been covered by you.
-        </p>
+    <div class="article">
+        <div class="img">
+            <img src="images/posts/26june2018.jpg">
+        </div>
+        <div class="content">
+            <p>
+                "Books" are surely personal things. We often
+                form unique bonds with the characters we read
+                about and relate to storylines in different ways
+                according to our perceptions. If you are a book
+                lover, and if you’re reading this post we’re presuming
+                that you are, the books on this list should have already
+                been covered by you.
+            </p>
+        </div>
     </div>
-    <div class="column">
-        <img src="images/posts/20june2018.png">
-        <p>
-            Vacations feel like the best time of the year as
-            everybody needs some relaxing time after the stressful
-            working days. But rather than just chilling throughout
-            the vacations, we all should know that utilizing them
-            so as to make ourselves better each day is equally important.
-        </p>
+    <div class="article">
+        <div class="img">
+            <img src="images/posts/20june2018.png">
+        </div>
+        <div class="content">
+            <p>
+                Vacations feel like the best time of the year as
+                everybody needs some relaxing time after the stressful
+                working days. But rather than just chilling throughout
+                the vacations, we all should know that utilizing them
+                so as to make ourselves better each day is equally important.
+            </p>
+        </div>
     </div>
-    <div class="column">
-        <img src="images/posts/12june2018.jpg">
-        <p>
-            What should students be worried about?
-            Well, there's a very simple answer to this
-            somewhat complex question. But before that,
-            let us talk about students in general.
-            Majority of the students in our country are
-            constantly worried about the GPA they'll score,
-            the package they'll end up with, the college
-            they'll choose for masters and what not.
-        </p>
+    <div class="article">
+        <div class="img">
+            <img src="images/posts/12june2018.jpg">
+        </div>
+        <div class="content">
+            <p>
+                What should students be worried about?
+                Well, there's a very simple answer to this
+                somewhat complex question. But before that,
+                let us talk about students in general.
+                Majority of the students in our country are
+                constantly worried about the GPA they'll score,
+                the package they'll end up with, the college
+                they'll choose for masters and what not.
+            </p>
+        </div>
     </div>
-    <div class="column">
-        <div class="youtube-video-container">
+    <div class="article">
+        <div class="youtube-video-container-16x9">
             <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fthecampuschronicles1%2Fvideos%2F860737890780910%2F&show_text=0&width=560"
-                    width="560"
-                    height="315"
-                    style="border:none;overflow:hidden;border-radius: 10px"
                     scrolling="no"
                     frameborder="0"
                     allowTransparency="true"
                     allowFullScreen="true">
             </iframe>
         </div>
-        <p>
-            Mr. Prafful Kamboj, the sports room incharge and indoor games manager of NIEC,
-            used to work at a factory before he joined NIEC. Due to lack of work opportunities
-            as communication has been a life long struggle for him, he's been facing
-            difficulties in managing family expenses, but still works hard to overcome his
-            limitations.<br/><br/>
-        </p>
+        <div class="content">
+            <p>
+                Mr. Prafful Kamboj, the sports room incharge and indoor games manager of NIEC,
+                used to work at a factory before he joined NIEC. Due to lack of work opportunities
+                as communication has been a life long struggle for him, he's been facing
+                difficulties in managing family expenses, but still works hard to overcome his
+                limitations.<br/><br/>
+            </p>
+        </div>
     </div>
-
-
-</div>
+</div>s
 <footer class="footer-distributed">
 
     <div class="footer-left">
@@ -238,9 +235,9 @@
         <p class="footer-links">
             <a href="#">Home</a>
             ·
-            <a href="#">Blog</a>
+            <a href="#">Our Work</a>
             ·
-            <a href="#">Pricing</a>
+            <a href="#">Services</a>
             ·
             <a href="#">About</a>
             ·
@@ -265,17 +262,18 @@
             <p>
                 <a href="https://www.google.com/maps/search/?api=1&query=dr.+akhilesh+das+gupta+institute+of+technology+and+management"
                    target="_blank">
-                    <span>DADGITM</span> New Delhi</a></p>
+                    <span>ADGITM</span> New Delhi</a></p>
         </div>
 
         <div>
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone" style="transform: rotate(90deg)"></i>
             <p><a href="tel:+919958038796">+91 99580 38796</a></p>
         </div>
 
         <div>
             <i class="fas fa-envelope"></i>
-            <p><a href="mailto:support@thecampuschronicles.in">support@thecampuschronicles.in</a></p>
+            <p><a href="mailto:support@thecampuschronicles.in" style="word-wrap: break-word">support@thecampuschronicles.in</a>
+            </p>
         </div>
 
     </div>
@@ -300,8 +298,6 @@
     </div>
 
 </footer>
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

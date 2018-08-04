@@ -15,54 +15,56 @@ document.addEventListener('DOMContentLoaded', function () {
     */
 });
 
-var navState = false;
+// status of navigation menu.
+// true means menu is visible, false means menu is hidden
+let navState = false;
 
 $(document).ready(function () {
-
-    // Find all YouTube videos
-    let $allVideos = $("iframe[src^='https://www.facebook.com']");
-
-    // The element that is fluid width
-    let $fluidEl = $(".column");
-
-    // Figure out and save aspect ratio for each video
-    $allVideos.each(function () {
-        const aspectRatio = $(this).height() / $(this).width();
-        $(this).data('aspectRatio', aspectRatio)
-        // and remove the hard coded width/height
-            .removeAttr('height')
-            .removeAttr('width');
-    });
-
-    // When the window is resized
     $(window).resize(function () {
-
-        let newWidth = $fluidEl.width();
-
-        // Resize all videos according to their own aspect ratio
-        $allVideos.each(function () {
-            let $el = $(this);
-            $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
-        });
-
-        // Kick off one resize to fix all videos on page load
+        let navHeaderHeight = document.getElementById("nav-header").offsetHeight;
+        document.getElementById("side-nav-menu").style.top = navHeaderHeight.toString() + "px";
     }).resize();
-    let navHeaderHeight = document.getElementById("nav-header").offsetHeight;
-    document.getElementById("side-nav-menu").style.top = navHeaderHeight.toString() + "px";
-    console.log(navHeaderHeight);
-    console.log(document.getElementById("side-nav-menu").offsetTop);
 
 });
 
+let sideNavMenu = document.getElementById("side-nav-menu");
+let navStateElement = document.getElementById("nav-state");
+window.onclick = function (event) {
+    if (event.target !== sideNavMenu && event.target !== navStateElement) {
+        if (navState) {
+            sideNavMenu.style.width = "0px";
+            document.getElementById("nav-state").innerHTML = "&#9776;";
+            navState = !navState;
+        }
+    }
+};
+
 function openNav() {
+    let width = $(navStateElement).width();
+    let height = $(navStateElement).height();
     if (navState) {
         document.getElementById("side-nav-menu").style.width = "0px";
         document.getElementById("nav-state").innerHTML = "&#9776;";
     }
     else {
-        document.getElementById("side-nav-menu").style.width = "250px";
+        if (window.innerWidth < 500)
+            document.getElementById("side-nav-menu").style.width = "200px";
+        else document.getElementById("side-nav-menu").style.width = "250px";
         document.getElementById("nav-state").innerHTML = "&#215;";
     }
+    $(navStateElement).width(width);
+    $(navStateElement).height(height);
+
     navState = !navState;
 }
+
+// Bind the swipeHandler callback function to the swipe event on div.box
+$(document).on("swipe", swipeHandler);
+
+// Callback function references the event target and adds the 'swipe' class to it
+function swipeHandler(event) {
+    $(event.target).addClass("swipe");
+    openNav();
+}
+
 
